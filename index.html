@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilizacao/reset.css" />
+    <link rel="stylesheet" href="./estilizacao/styles.css" />
+    <link rel="icon" type="image/png" href="./imagens/favicon-pokeball.png" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header class="principalHeader">
+      <h1 class="titulo">P<img src="./imagens/Pokemon-Logo.png" alt="Logo da Pokedex" class="pokebola-logo" />kedex</h1>
+      <form class="procurar" id="procurarPokemon">
+        <input
+          type="search"
+          id="procurarInput"
+          placeholder="Procurar Pokemon..."
+        />
+        <button type="submit" class="botao-padrao">Buscar</button>
+      </form>
+      <button id="botaoAlternar" class="botaoAlternar botao-padrao">Mudar para Lista</button>
+    </header>
+    
+    <main class="pokemonContainer grade" id="pokemonContainer"></main>
+
+    <footer class="principalFooter">
+      <p>&copy; 2025 Pokedex. Todos os direitos reservados.</p>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
